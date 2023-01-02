@@ -1,5 +1,11 @@
+import os
+import sys
+
+current_directory = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(current_directory)
+
 from PyQt5.QtWidgets import QWidget
-from ToolsCode.ChatTool.ui.loginWindow import Ui_loginWindow
+from ui.loginWindow import Ui_loginWindow
 from myMenu import MyMenu
 import loginTool as log
 
